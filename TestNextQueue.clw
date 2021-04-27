@@ -114,7 +114,7 @@ str                   ANY
     'LOOP I: '&TimeI/100&' '&SumI&'|'& |
     'LOOP GET/ERRORCODE: '&TimeG/100&' '&CLIP(LEFT(FORMAT((TimeG/TimeI-1)*100,@N-8.2~%~)))&' '&SumG&' '&CHOOSE(SumG=SumI,'OK','X') &'|'& |
     'LOOP SET/NEXT: '&TimeN/100&' '&CLIP(LEFT(FORMAT((TimeN/TimeI-1)*100,@N-8.2~%~)))&' '&SumN&' '&CHOOSE(SumN=SumI,'OK','X') &'|'& |
-    '<13,10>'& |
+    '|'& |
     'LOOP DELETE I: '&TimeDI/100&' '&RecsDI&'|'& |
     'LOOP DELETE SET/PREVIOUS: '&TimeDP/100&' '&CLIP(LEFT(FORMAT((TimeDP/TimeDI-1)*100,@N-8.2~%~)))&' '&RecsDP&' '&CHOOSE(RecsDP=0,'OK','X') 
       

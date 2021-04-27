@@ -27,7 +27,7 @@ ptr                   LONG
   CODE
   ptr = POINTER(q)
   IF ptr
-    GET(q,POINTER(q)-1)
+    GET(q,ptr-1)
   ELSE
     GET(q,RECORDS(q))
   .
